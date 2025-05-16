@@ -1,15 +1,18 @@
-const openBtn = document.getElementById("open__nav-btn");
-const closeBtn = document.getElementById("close__nav-btn");
-const navItems = document.querySelector(".nav__items");
+        // Mobile Navigation Toggle
+        const openNavBtn = document.querySelector('#open__nav-btn');
+        const closeNavBtn = document.querySelector('#close__nav-btn');
+        const navItems = document.querySelector('.nav__items');
 
-openBtn.addEventListener("click", () => {
-  navItems.style.display = "flex";
-  openBtn.style.display = "none";
-  closeBtn.style.display = "inline-block";
-});
+        // Open nav menu
+        openNavBtn.addEventListener('click', () => {
+            navItems.style.display = 'flex';
+            openNavBtn.style.display = 'none';
+            closeNavBtn.style.display = 'inline-block';
+        });
 
-closeBtn.addEventListener("click", () => {
-  navItems.style.display = "none";
-  openBtn.style.display = "inline-block";
-  closeBtn.style.display = "none";
-});
+        // Close nav menu
+        closeNavBtn.addEventListener('click', () => {
+            navItems.style.display = 'none';
+            openNavBtn.style.display = 'inline-block';
+            closeNavBtn.style.display = 'none';
+        });
