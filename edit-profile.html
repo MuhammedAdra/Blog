@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Modern Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- IconScout Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">Modern Blog</a>
+            <ul class="nav__items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="https://via.placeholder.com/40" alt="Profile Avatar">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+        <div class="container dashboard__container">
+            <!-- Dashboard Sidebar -->
+            <aside class="dashboard__sidebar">
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="uil uil-dashboard"></i>
+                            <h5>Dashboard</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-post.html">
+                            <i class="uil uil-plus-circle"></i>
+                            <h5>Add Post</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-posts.html">
+                            <i class="uil uil-postcard"></i>
+                            <h5>Manage Posts</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-categories.html">
+                            <i class="uil uil-list-ul"></i>
+                            <h5>Manage Categories</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-users.html">
+                            <i class="uil uil-users-alt"></i>
+                            <h5>Manage Users</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="edit-profile.html" class="active">
+                            <i class="uil uil-user-circle"></i>
+                            <h5>Edit Profile</h5>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            
+            <!-- Dashboard Main Content -->
+            <main class="dashboard__main">
+                <h2>Edit Your Profile</h2>
+                
+                <form class="edit-profile__form">
+                    <div class="profile__header">
+                        <div class="current-avatar mb-3">
+                            <img src="https://via.placeholder.com/150" alt="Current Avatar" class="rounded-circle">
+                        </div>
+                        <div class="profile__info">
+                            <h3>Sarah Johnson</h3>
+                            <p>Admin • Joined Jan 15, 2023</p>
+                        </div>
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" value="Sarah" required>
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" value="Johnson" required>
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" value="sarahjohnson" required>
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="sarah.johnson@example.com" required>
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="avatar">Profile Picture</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/*">
+                        <small>Leave empty to keep current profile picture</small>
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" name="bio" rows="4">Sarah is the founder and editor-in-chief of Modern Blog. With a background in journalism and digital media, she oversees content strategy and editorial direction. She's passionate about sharing diverse perspectives and creating engaging content that informs and inspires.</textarea>
+                    </div>
+                    
+                    <h3 class="mt-5">Social Media Links</h3>
+                    
+                    <div class="form__control">
+                        <label for="twitter"><i class="uil uil-twitter"></i> Twitter</label>
+                        <input type="url" id="twitter" name="twitter" value="https://twitter.com/sarahjohnson">
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="instagram"><i class="uil uil-instagram"></i> Instagram</label>
+                        <input type="url" id="instagram" name="instagram" value="https://instagram.com/sarahjohnson">
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="linkedin"><i class="uil uil-linkedin"></i> LinkedIn</label>
+                        <input type="url" id="linkedin" name="linkedin" value="https://linkedin.com/in/sarahjohnson">
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="website"><i class="uil uil-globe"></i> Website</label>
+                        <input type="url" id="website" name="website" value="https://sarahjohnson.com">
+                    </div>
+                    
+                    <h3 class="mt-5">Change Password</h3>
+                    
+                    <div class="form__control">
+                        <label for="current-password">Current Password</label>
+                        <input type="password" id="current-password" name="current-password" placeholder="Enter your current password">
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="new-password">New Password</label>
+                        <input type="password" id="new-password" name="new-password" placeholder="Enter new password">
+                    </div>
+                    
+                    <div class="form__control">
+                        <label for="confirm-password">Confirm New Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password">
+                    </div>
+                    
+                    <div class="form__actions">
+                        <button type="submit" class="btn btn-primary">Update Profile</button>
+                        <a href="dashboard.html" class="btn btn-outline">Cancel</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </section>
+    <!-- End of Dashboard -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Copyright -->
+            <div class="footer__copyright">
+                <small>&copy; 2025 Modern Blog. All rights reserved.</small>
+                <p class="footer__made-with">
+                    Made with <i class="uil uil-heart"></i> by Modern Blog Team
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

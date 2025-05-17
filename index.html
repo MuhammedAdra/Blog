@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Blog Website</title>
+    <title>Modern Blog - Share Knowledge and Stories</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- IconScout Unicons -->
@@ -24,7 +26,7 @@
                 <li><a href="signin.html">Sign In</a></li>
                 <li class="nav__profile">
                     <div class="avatar">
-                        <img src="images/avatar1.jpg" alt="Profile Avatar">
+                        <img src="https://via.placeholder.com/40" alt="Profile Avatar">
                     </div>
                     <ul>
                         <li><a href="dashboard.html">Dashboard</a></li>
@@ -38,55 +40,96 @@
     </nav>
     <!-- End of Navigation -->
 
-    <!-- Featured Post -->
-    <section class="featured">
-        <div class="container featured__container">
-            <div class="post__thumbnail">
-                <img src="images/blog1.jpg" alt="Featured Post">
-            </div>
-            <div class="post__info">
-                <a href="category.html" class="category__button">Wildlife</a>
-                <h2 class="post__title"><a href="post.html">Exploring the Untamed Beauty of Nature's Wilderness</a></h2>
-                <p class="post__body">Venture into the heart of untouched landscapes and discover the raw, breathtaking beauty of wildlife in their natural habitats. Our journey takes us through dense forests, expansive savannas, and remote mountains.</p>
-                <div class="post__author">
-                    <div class="post__author-avatar">
-                        <img src="images/avatar1.jpg" alt="Author Avatar">
-                    </div>
-                    <div class="post__author-info">
-                        <h5>By: John Doe</h5>
-                        <small>October 10, 2023 · 10 min read</small>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1>Explore the World Through Words</h1>
+                <p>Discover insightful articles, stories, and guides across various topics. Join our community of readers and writers passionate about sharing knowledge and inspiration.</p>
+                <div class="hero__buttons">
+                    <a href="blog.html" class="btn btn-primary">Read Articles</a>
+                    <a href="signup.html" class="btn btn-outline">Join Community</a>
                 </div>
-                <a href="post.html" class="read-more">
-                    Read Full Article <i class="uil uil-arrow-right"></i>
-                </a>
+            </div>
+            <div class="hero__image">
+                <img src="https://via.placeholder.com/600x400" alt="Hero Image">
             </div>
         </div>
     </section>
-    <!-- End of Featured Post -->
+    <!-- End of Hero Section -->
 
-    <!-- Posts -->
+    <!-- Featured Posts -->
+    <section class="featured">
+        <div class="container featured__container">
+            <h2 class="section__title">Featured Articles</h2>
+            
+            <div class="featured__posts">
+                <!-- Featured Post 1 -->
+                <article class="featured__post">
+                    <div class="post__thumbnail">
+                        <img src="https://via.placeholder.com/1200x600" alt="Featured Post">
+                    </div>
+                    <div class="post__content">
+                        <div class="post__info">
+                            <a href="category-posts.html" class="category__button">Travel</a>
+                            <div class="post__date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <span>October 20, 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="post__title">
+                            <a href="post.html">The Ultimate Guide to Sustainable Travel in 2023</a>
+                        </h3>
+                        <p class="post__body">
+                            Discover how to explore the world while minimizing your environmental impact. From eco-friendly accommodations to responsible tourism practices, this comprehensive guide covers everything you need to know about sustainable travel.
+                        </p>
+                        <div class="post__author">
+                            <div class="post__author-avatar">
+                                <img src="https://via.placeholder.com/40" alt="Author Avatar">
+                            </div>
+                            <div class="post__author-info">
+                                <h5>By: Emma Wilson</h5>
+                                <small>Travel Specialist • 12 min read</small>
+                            </div>
+                        </div>
+                        <a href="post.html" class="read-more">
+                            Read Full Article <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- End of Featured Posts -->
+
+    <!-- Recent Posts -->
     <section class="posts">
         <div class="container posts__container">
-            <h2 class="section__title">Latest Articles</h2>
+            <h2 class="section__title">Recent Articles</h2>
             
             <div class="posts__grid">
                 <!-- Post 1 -->
                 <article class="post" style="--delay: 1;">
                     <div class="post__thumbnail">
-                        <img src="images/blog2.jpg" alt="Post Thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
                     </div>
                     <div class="post__content">
-                        <a href="category.html" class="category__button">Photography</a>
-                        <h3 class="post__title"><a href="post.html">The Art of Wildlife Photography</a></h3>
-                        <p class="post__body">Master the techniques of capturing stunning wildlife moments in their natural habitat.</p>
+                        <div class="post__info">
+                            <a href="category-posts.html" class="category__button">Wildlife</a>
+                            <div class="post__date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <span>October 18, 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="post__title"><a href="post.html">Endangered Species: The Fight for Survival</a></h3>
+                        <p class="post__body">An in-depth look at conservation efforts around the world to protect endangered species from extinction.</p>
                         <div class="post__author">
                             <div class="post__author-avatar">
-                                <img src="images/avatar2.jpg" alt="Author Avatar">
+                                <img src="https://via.placeholder.com/40" alt="Author Avatar">
                             </div>
                             <div class="post__author-info">
-                                <h5>By: Jane Doe</h5>
-                                <small>October 15, 2023 · 7 min read</small>
+                                <h5>By: David Chen</h5>
+                                <small>8 min read</small>
                             </div>
                         </div>
                     </div>
@@ -95,19 +138,25 @@
                 <!-- Post 2 -->
                 <article class="post" style="--delay: 2;">
                     <div class="post__thumbnail">
-                        <img src="images/blog3.jpg" alt="Post Thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
                     </div>
                     <div class="post__content">
-                        <a href="category.html" class="category__button">Travel</a>
-                        <h3 class="post__title"><a href="post.html">Exploring Ancient Ruins in South America</a></h3>
-                        <p class="post__body">Journey through time as we explore forgotten civilizations and their architectural marvels.</p>
+                        <div class="post__info">
+                            <a href="category-posts.html" class="category__button">Technology</a>
+                            <div class="post__date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <span>October 15, 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="post__title"><a href="post.html">The Future of Artificial Intelligence in Healthcare</a></h3>
+                        <p class="post__body">How AI is revolutionizing medical diagnostics, treatment plans, and patient care across the healthcare industry.</p>
                         <div class="post__author">
                             <div class="post__author-avatar">
-                                <img src="images/avatar3.jpg" alt="Author Avatar">
+                                <img src="https://via.placeholder.com/40" alt="Author Avatar">
                             </div>
                             <div class="post__author-info">
-                                <h5>By: Mark Johnson</h5>
-                                <small>October 12, 2023 · 8 min read</small>
+                                <h5>By: Sarah Johnson</h5>
+                                <small>10 min read</small>
                             </div>
                         </div>
                     </div>
@@ -116,19 +165,25 @@
                 <!-- Post 3 -->
                 <article class="post" style="--delay: 3;">
                     <div class="post__thumbnail">
-                        <img src="images/blog8.jpg" alt="Post Thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
                     </div>
                     <div class="post__content">
-                        <a href="category.html" class="category__button">Lifestyle</a>
-                        <h3 class="post__title"><a href="post.html">Sustainable Living: A Beginner's Guide</a></h3>
-                        <p class="post__body">Simple steps to reduce your carbon footprint and live more harmoniously with nature.</p>
+                        <div class="post__info">
+                            <a href="category-posts.html" class="category__button">Food</a>
+                            <div class="post__date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <span>October 12, 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="post__title"><a href="post.html">Plant-Based Cooking: A Beginner's Guide</a></h3>
+                        <p class="post__body">Essential tips, techniques, and recipes to help you start your journey into delicious plant-based cooking.</p>
                         <div class="post__author">
                             <div class="post__author-avatar">
-                                <img src="images/avatar8.jpg" alt="Author Avatar">
+                                <img src="https://via.placeholder.com/40" alt="Author Avatar">
                             </div>
                             <div class="post__author-info">
-                                <h5>By: Sarah Williams</h5>
-                                <small>October 8, 2023 · 5 min read</small>
+                                <h5>By: Maria Garcia</h5>
+                                <small>7 min read</small>
                             </div>
                         </div>
                     </div>
@@ -137,19 +192,25 @@
                 <!-- Post 4 -->
                 <article class="post" style="--delay: 4;">
                     <div class="post__thumbnail">
-                        <img src="images/blog5.jpg" alt="Post Thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
                     </div>
                     <div class="post__content">
-                        <a href="category.html" class="category__button">Science</a>
-                        <h3 class="post__title"><a href="post.html">The Science Behind Northern Lights</a></h3>
-                        <p class="post__body">Understanding the mesmerizing aurora borealis phenomenon that lights up northern skies.</p>
+                        <div class="post__info">
+                            <a href="category-posts.html" class="category__button">Photography</a>
+                            <div class="post__date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <span>October 10, 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="post__title"><a href="post.html">Mastering Landscape Photography</a></h3>
+                        <p class="post__body">Expert techniques for capturing breathtaking landscape photos in any environment and lighting condition.</p>
                         <div class="post__author">
                             <div class="post__author-avatar">
-                                <img src="images/avatar5.jpg" alt="Author Avatar">
+                                <img src="https://via.placeholder.com/40" alt="Author Avatar">
                             </div>
                             <div class="post__author-info">
-                                <h5>By: David Chen</h5>
-                                <small>October 5, 2023 · 6 min read</small>
+                                <h5>By: James Wilson</h5>
+                                <small>9 min read</small>
                             </div>
                         </div>
                     </div>
@@ -158,19 +219,25 @@
                 <!-- Post 5 -->
                 <article class="post" style="--delay: 5;">
                     <div class="post__thumbnail">
-                        <img src="images/blog6.jpg" alt="Post Thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
                     </div>
                     <div class="post__content">
-                        <a href="category.html" class="category__button">Food</a>
-                        <h3 class="post__title"><a href="post.html">Traditional Cuisine of Mediterranean Islands</a></h3>
-                        <p class="post__body">Discover the rich flavors and cooking techniques that define Mediterranean island cuisine.</p>
+                        <div class="post__info">
+                            <a href="category-posts.html" class="category__button">Travel</a>
+                            <div class="post__date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <span>October 8, 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="post__title"><a href="post.html">Hidden Gems: Unexplored Destinations in Europe</a></h3>
+                        <p class="post__body">Discover lesser-known but equally beautiful European destinations that offer authentic experiences away from tourist crowds.</p>
                         <div class="post__author">
                             <div class="post__author-avatar">
-                                <img src="images/avatar6.jpg" alt="Author Avatar">
+                                <img src="https://via.placeholder.com/40" alt="Author Avatar">
                             </div>
                             <div class="post__author-info">
-                                <h5>By: Maria Garcia</h5>
-                                <small>October 3, 2023 · 9 min read</small>
+                                <h5>By: Sophie Martin</h5>
+                                <small>11 min read</small>
                             </div>
                         </div>
                     </div>
@@ -179,72 +246,120 @@
                 <!-- Post 6 -->
                 <article class="post" style="--delay: 6;">
                     <div class="post__thumbnail">
-                        <img src="images/blog7.jpg" alt="Post Thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
                     </div>
                     <div class="post__content">
-                        <a href="category.html" class="category__button">Architecture</a>
-                        <h3 class="post__title"><a href="post.html">Modern Architecture: Breaking Boundaries</a></h3>
-                        <p class="post__body">How contemporary architects are pushing the limits of design and sustainability.</p>
+                        <div class="post__info">
+                            <a href="category-posts.html" class="category__button">Science</a>
+                            <div class="post__date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <span>October 5, 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="post__title"><a href="post.html">The Mystery of Dark Matter Explained</a></h3>
+                        <p class="post__body">A comprehensive explanation of dark matter, its importance in the universe, and the ongoing scientific research to understand it.</p>
                         <div class="post__author">
                             <div class="post__author-avatar">
-                                <img src="images/avatar7.jpg" alt="Author Avatar">
+                                <img src="https://via.placeholder.com/40" alt="Author Avatar">
                             </div>
                             <div class="post__author-info">
                                 <h5>By: Robert Taylor</h5>
-                                <small>September 29, 2023 · 7 min read</small>
+                                <small>13 min read</small>
                             </div>
                         </div>
                     </div>
                 </article>
             </div>
             
-            <div class="load-more">
-                <button class="btn btn-outline">Load More Articles</button>
+            <div class="view-more text-center mt-5">
+                <a href="blog.html" class="btn btn-primary">View All Articles</a>
             </div>
         </div>
     </section>
-    <!-- End of Posts -->
+    <!-- End of Recent Posts -->
 
-    <!-- Category Buttons -->
-    <section class="category__buttons">
-        <div class="container category__buttons-container">
-            <h2 class="section__title">Explore Categories</h2>
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container categories__container">
+            <h2 class="section__title">Browse by Category</h2>
             
-            <div class="category__buttons-grid">
-                <a href="category.html" class="category__button" style="--i: 1">
-                    <i class="uil uil-plane"></i> Travel
+            <div class="categories__grid">
+                <!-- Category 1 -->
+                <a href="category-posts.html" class="category__card">
+                    <div class="category__icon">
+                        <i class="uil uil-plane"></i>
+                    </div>
+                    <h4>Travel</h4>
+                    <p>15 Articles</p>
                 </a>
-                <a href="category.html" class="category__button" style="--i: 2">
-                    <i class="uil uil-paw"></i> Wildlife
+                
+                <!-- Category 2 -->
+                <a href="category-posts.html" class="category__card">
+                    <div class="category__icon">
+                        <i class="uil uil-trees"></i>
+                    </div>
+                    <h4>Wildlife</h4>
+                    <p>8 Articles</p>
                 </a>
-                <a href="category.html" class="category__button" style="--i: 3">
-                    <i class="uil uil-utensils"></i> Food
+                
+                <!-- Category 3 -->
+                <a href="category-posts.html" class="category__card">
+                    <div class="category__icon">
+                        <i class="uil uil-restaurant"></i>
+                    </div>
+                    <h4>Food</h4>
+                    <p>12 Articles</p>
                 </a>
-                <a href="category.html" class="category__button" style="--i: 4">
-                    <i class="uil uil-circuit"></i> Science
+                
+                <!-- Category 4 -->
+                <a href="category-posts.html" class="category__card">
+                    <div class="category__icon">
+                        <i class="uil uil-robot"></i>
+                    </div>
+                    <h4>Technology</h4>
+                    <p>10 Articles</p>
                 </a>
-                <a href="category.html" class="category__button" style="--i: 5">
-                    <i class="uil uil-palette"></i> Art
+                
+                <!-- Category 5 -->
+                <a href="category-posts.html" class="category__card">
+                    <div class="category__icon">
+                        <i class="uil uil-atom"></i>
+                    </div>
+                    <h4>Science</h4>
+                    <p>7 Articles</p>
                 </a>
-                <a href="category.html" class="category__button" style="--i: 6">
-                    <i class="uil uil-music"></i> Music
-                </a>
-                <a href="category.html" class="category__button" style="--i: 7">
-                    <i class="uil uil-camera"></i> Photography
-                </a>
-                <a href="category.html" class="category__button" style="--i: 8">
-                    <i class="uil uil-book-open"></i> Literature
-                </a>
-                <a href="category.html" class="category__button" style="--i: 9">
-                    <i class="uil uil-mountains"></i> Adventure
-                </a>
-                <a href="category.html" class="category__button" style="--i: 10">
-                    <i class="uil uil-heart"></i> Lifestyle
+                
+                <!-- Category 6 -->
+                <a href="category-posts.html" class="category__card">
+                    <div class="category__icon">
+                        <i class="uil uil-camera"></i>
+                    </div>
+                    <h4>Photography</h4>
+                    <p>9 Articles</p>
                 </a>
             </div>
         </div>
     </section>
-    <!-- End of Category Buttons -->
+    <!-- End of Categories Section -->
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container newsletter__container">
+            <div class="newsletter__content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest articles, news, and exclusive content delivered straight to your inbox.</p>
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <small>By subscribing, you agree to our <a href="#">Privacy Policy</a></small>
+            </div>
+            <div class="newsletter__image">
+                <img src="https://via.placeholder.com/500x300" alt="Newsletter Image">
+            </div>
+        </div>
+    </section>
+    <!-- End of Newsletter Section -->
 
     <!-- Footer -->
     <footer>
@@ -278,11 +393,11 @@
                 <article>
                     <h4>Categories</h4>
                     <ul>
-                        <li><a href="category.html">Travel</a></li>
-                        <li><a href="category.html">Wildlife</a></li>
-                        <li><a href="category.html">Food</a></li>
-                        <li><a href="category.html">Science</a></li>
-                        <li><a href="category.html">Music</a></li>
+                        <li><a href="category-posts.html">Travel</a></li>
+                        <li><a href="category-posts.html">Wildlife</a></li>
+                        <li><a href="category-posts.html">Food</a></li>
+                        <li><a href="category-posts.html">Science</a></li>
+                        <li><a href="category-posts.html">Music</a></li>
                     </ul>
                 </article>
                 
@@ -318,8 +433,9 @@
     </footer>
     <!-- End of Footer -->
 
-    <!-- JavaScript -->
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
     <script src="main.js"></script>
- 
 </body>
 </html>

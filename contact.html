@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Modern Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- IconScout Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">Modern Blog</a>
+            <ul class="nav__items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="https://via.placeholder.com/40" alt="Profile Avatar">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Contact Page -->
+    <section class="contact__page">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            
+            <div class="contact__container">
+                <!-- Contact Information -->
+                <div class="contact__info">
+                    <!-- Contact Card 1 -->
+                    <div class="contact__card">
+                        <div class="contact__card-icon">
+                            <i class="uil uil-envelope"></i>
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <p>info@modernblog.com</p>
+                            <p>support@modernblog.com</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Card 2 -->
+                    <div class="contact__card">
+                        <div class="contact__card-icon">
+                            <i class="uil uil-phone"></i>
+                        </div>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>+1 (555) 123-4567</p>
+                            <p>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Card 3 -->
+                    <div class="contact__card">
+                        <div class="contact__card-icon">
+                            <i class="uil uil-map-marker"></i>
+                        </div>
+                        <div>
+                            <h5>Location</h5>
+                            <p>123 Blog Street, Suite 456</p>
+                            <p>San Francisco, CA 94103</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Card 4 -->
+                    <div class="contact__card">
+                        <div class="contact__card-icon">
+                            <i class="uil uil-clock"></i>
+                        </div>
+                        <div>
+                            <h5>Office Hours</h5>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                            <p>Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact__form">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="form__control">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form__control">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form__control">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter message subject" required>
+                        </div>
+                        <div class="form__control">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Google Map -->
+            <div class="map mt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.7462606519114!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858085a4d36fe9%3A0x2f2d2d7d6e0f3f8a!2sSan%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact Page -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Social Icons -->
+            <div class="footer__socials">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="uil uil-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="uil uil-github"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="footer__container">
+                <article>
+                    <h4>About Us</h4>
+                    <p>Modern Blog is a platform dedicated to sharing knowledge, inspiration, and stories across various topics. Our mission is to inform, entertain, and connect people through quality content.</p>
+                </article>
+                
+                <article>
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="category-posts.html">Travel</a></li>
+                        <li><a href="category-posts.html">Wildlife</a></li>
+                        <li><a href="category-posts.html">Food</a></li>
+                        <li><a href="category-posts.html">Science</a></li>
+                        <li><a href="category-posts.html">Music</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="footer__form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </article>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer__copyright">
+                <small>&copy; 2025 Modern Blog. All rights reserved.</small>
+                <p class="footer__made-with">
+                    Made with <i class="uil uil-heart"></i> by Modern Blog Team
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

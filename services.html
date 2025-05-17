@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Modern Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- IconScout Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">Modern Blog</a>
+            <ul class="nav__items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="https://via.placeholder.com/40" alt="Profile Avatar">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Services Page -->
+    <section class="services__page">
+        <div class="container">
+            <h2 class="section__title">Our Services</h2>
+            <p class="text-center mb-5">We offer a range of services to help you create, publish, and promote your content.</p>
+            
+            <div class="services__container">
+                <!-- Service 1 -->
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="uil uil-pen"></i>
+                    </div>
+                    <h4>Content Creation</h4>
+                    <p>
+                        Our team of experienced writers can create high-quality, engaging content tailored to your specific needs and audience. From blog posts and articles to social media content and newsletters, we've got you covered.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="uil uil-edit"></i>
+                    </div>
+                    <h4>Editing & Proofreading</h4>
+                    <p>
+                        Ensure your content is polished and error-free with our professional editing and proofreading services. We'll check for grammar, spelling, clarity, and consistency to make your writing shine.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="uil uil-search"></i>
+                    </div>
+                    <h4>SEO Optimization</h4>
+                    <p>
+                        Improve your content's visibility and reach with our SEO optimization services. We'll help you identify the right keywords, optimize your content structure, and implement best practices to boost your search engine rankings.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="uil uil-chart-line"></i>
+                    </div>
+                    <h4>Content Strategy</h4>
+                    <p>
+                        Develop a comprehensive content strategy that aligns with your goals and resonates with your target audience. We'll help you plan, create, and distribute content that drives engagement and achieves results.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="uil uil-megaphone"></i>
+                    </div>
+                    <h4>Social Media Management</h4>
+                    <p>
+                        Let us handle your social media presence while you focus on your core business. We'll create engaging content, schedule posts, interact with your audience, and analyze performance to maximize your social media impact.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service__card">
+                    <div class="service__icon">
+                        <i class="uil uil-laptop"></i>
+                    </div>
+                    <h4>Website Development</h4>
+                    <p>
+                        Need a professional website or blog? Our team can design and develop a custom website that reflects your brand, engages your audience, and helps you achieve your online goals.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Pricing Section -->
+            <div class="pricing__section mt-5 pt-5">
+                <h2 class="section__title">Our Pricing Plans</h2>
+                <p class="text-center mb-5">Choose the plan that best fits your needs and budget.</p>
+                
+                <div class="row">
+                    <!-- Basic Plan -->
+                    <div class="col-md-4 mb-4">
+                        <div class="pricing__card bg-white p-4 rounded shadow-sm h-100 text-center">
+                            <h3 class="pricing__title">Basic</h3>
+                            <div class="pricing__price my-4">
+                                <h2>$99<span>/month</span></h2>
+                            </div>
+                            <ul class="pricing__features list-unstyled mb-4">
+                                <li><i class="uil uil-check text-success"></i> 2 Blog Posts per Month</li>
+                                <li><i class="uil uil-check text-success"></i> Basic SEO Optimization</li>
+                                <li><i class="uil uil-check text-success"></i> Social Media Sharing</li>
+                                <li><i class="uil uil-check text-success"></i> Email Support</li>
+                                <li class="text-muted"><i class="uil uil-times text-danger"></i> Content Strategy</li>
+                                <li class="text-muted"><i class="uil uil-times text-danger"></i> Analytics Reports</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Standard Plan -->
+                    <div class="col-md-4 mb-4">
+                        <div class="pricing__card bg-white p-4 rounded shadow h-100 text-center position-relative">
+                            <span class="badge bg-primary position-absolute top-0 end-0 mt-3 me-3">Popular</span>
+                            <h3 class="pricing__title">Standard</h3>
+                            <div class="pricing__price my-4">
+                                <h2>$199<span>/month</span></h2>
+                            </div>
+                            <ul class="pricing__features list-unstyled mb-4">
+                                <li><i class="uil uil-check text-success"></i> 5 Blog Posts per Month</li>
+                                <li><i class="uil uil-check text-success"></i> Advanced SEO Optimization</li>
+                                <li><i class="uil uil-check text-success"></i> Social Media Management</li>
+                                <li><i class="uil uil-check text-success"></i> Priority Support</li>
+                                <li><i class="uil uil-check text-success"></i> Basic Content Strategy</li>
+                                <li class="text-muted"><i class="uil uil-times text-danger"></i> Analytics Reports</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Premium Plan -->
+                    <div class="col-md-4 mb-4">
+                        <div class="pricing__card bg-white p-4 rounded shadow-sm h-100 text-center">
+                            <h3 class="pricing__title">Premium</h3>
+                            <div class="pricing__price my-4">
+                                <h2>$399<span>/month</span></h2>
+                            </div>
+                            <ul class="pricing__features list-unstyled mb-4">
+                                <li><i class="uil uil-check text-success"></i> 10 Blog Posts per Month</li>
+                                <li><i class="uil uil-check text-success"></i> Premium SEO Optimization</li>
+                                <li><i class="uil uil-check text-success"></i> Full Social Media Management</li>
+                                <li><i class="uil uil-check text-success"></i> 24/7 Priority Support</li>
+                                <li><i class="uil uil-check text-success"></i> Comprehensive Content Strategy</li>
+                                <li><i class="uil uil-check text-success"></i> Monthly Analytics Reports</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="faq__section mt-5 pt-5">
+                <h2 class="section__title">Frequently Asked Questions</h2>
+                
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What types of content do you create?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We create a wide range of content including blog posts, articles, social media content, newsletters, ebooks, whitepapers, case studies, product descriptions, and more. Our team of writers specializes in various industries and can adapt to your specific needs and tone of voice.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How long does it take to complete a project?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Project timelines vary depending on the scope and complexity of the work. A standard blog post typically takes 3-5 business days, while more comprehensive projects like website development may take several weeks. We'll provide you with a specific timeline during our initial consultation.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Can I request revisions to the content?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, absolutely! We include up to two rounds of revisions with all our content creation services to ensure you're completely satisfied with the final result. Additional revisions can be arranged at an extra cost if needed.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Do you offer custom packages?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we understand that every client has unique needs. If our standard packages don't quite fit your requirements, we're happy to create a custom package tailored specifically to your goals and budget. Contact us to discuss your needs.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                How do I get started?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Getting started is easy! Simply contact us through our contact form, email, or phone. We'll schedule an initial consultation to discuss your needs, goals, and expectations. After that, we'll provide you with a proposal and once approved, we'll begin working on your project.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="cta__section mt-5 py-5 text-center bg-light rounded">
+                <h3>Ready to Get Started?</h3>
+                <p class="mb-4">Contact us today to discuss how we can help you achieve your content goals.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <!-- End of Services Page -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Social Icons -->
+            <div class="footer__socials">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="uil uil-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="uil uil-github"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="footer__container">
+                <article>
+                    <h4>About Us</h4>
+                    <p>Modern Blog is a platform dedicated to sharing knowledge, inspiration, and stories across various topics. Our mission is to inform, entertain, and connect people through quality content.</p>
+                </article>
+                
+                <article>
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="category-posts.html">Travel</a></li>
+                        <li><a href="category-posts.html">Wildlife</a></li>
+                        <li><a href="category-posts.html">Food</a></li>
+                        <li><a href="category-posts.html">Science</a></li>
+                        <li><a href="category-posts.html">Music</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="footer__form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </article>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer__copyright">
+                <small>&copy; 2025 Modern Blog. All rights reserved.</small>
+                <p class="footer__made-with">
+                    Made with <i class="uil uil-heart"></i> by Modern Blog Team
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Modern Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- IconScout Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo">Modern Blog</a>
+            <ul class="nav__items">
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li class="nav__profile">
+                    <div class="avatar">
+                        <img src="https://via.placeholder.com/40" alt="Profile Avatar">
+                    </div>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="open__nav-btn"><i class="uil uil-bars"></i></button>
+            <button id="close__nav-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Blog Header -->
+    <header class="blog__header">
+        <div class="container blog__header-container">
+            <h1>Explore Our Articles</h1>
+            <p>Discover insightful content across various topics, from travel and wildlife to science and technology.</p>
+        </div>
+    </header>
+    <!-- End of Blog Header -->
+
+    <!-- Blog Search & Filter -->
+    <section class="blog__search">
+        <div class="container">
+            <div class="search__container">
+                <div class="search__bar">
+                    <input type="text" placeholder="Search articles...">
+                    <button type="submit"><i class="uil uil-search"></i></button>
+                </div>
+                <div class="filter__options">
+                    <select name="sort" id="sort">
+                        <option value="latest">Latest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Search & Filter -->
+
+    <!-- Blog Content -->
+    <section class="blog__content">
+        <div class="container blog__container">
+            <!-- Main Content -->
+            <main class="posts__wrapper">
+                <h2>All Articles</h2>
+                
+                <!-- Featured Post -->
+                <article class="featured__post">
+                    <div class="post__thumbnail">
+                        <img src="https://via.placeholder.com/1200x600" alt="Featured Post">
+                    </div>
+                    <div class="post__content">
+                        <div class="post__info">
+                            <a href="category-posts.html" class="category__button">Featured</a>
+                            <div class="post__date">
+                                <i class="uil uil-calendar-alt"></i>
+                                <span>October 20, 2023</span>
+                            </div>
+                        </div>
+                        <h3 class="post__title">
+                            <a href="post.html">The Ultimate Guide to Sustainable Travel in 2023</a>
+                        </h3>
+                        <p class="post__body">
+                            Discover how to explore the world while minimizing your environmental impact. From eco-friendly accommodations to responsible tourism practices, this comprehensive guide covers everything you need to know about sustainable travel.
+                        </p>
+                        <div class="post__author">
+                            <div class="post__author-avatar">
+                                <img src="https://via.placeholder.com/40" alt="Author Avatar">
+                            </div>
+                            <div class="post__author-info">
+                                <h5>By: Emma Wilson</h5>
+                                <small>Travel Specialist • 12 min read</small>
+                            </div>
+                        </div>
+                        <a href="post.html" class="read-more">
+                            Read Full Article <i class="uil uil-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Posts Grid -->
+                <div class="posts__grid">
+                    <!-- Post 1 -->
+                    <article class="post" style="--delay: 1;">
+                        <div class="post__thumbnail">
+                            <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
+                        </div>
+                        <div class="post__content">
+                            <div class="post__info">
+                                <a href="category-posts.html" class="category__button">Wildlife</a>
+                                <div class="post__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span>October 18, 2023</span>
+                                </div>
+                            </div>
+                            <h3 class="post__title"><a href="post.html">Endangered Species: The Fight for Survival</a></h3>
+                            <p class="post__body">An in-depth look at conservation efforts around the world to protect endangered species from extinction.</p>
+                            <div class="post__author">
+                                <div class="post__author-avatar">
+                                    <img src="https://via.placeholder.com/40" alt="Author Avatar">
+                                </div>
+                                <div class="post__author-info">
+                                    <h5>By: David Chen</h5>
+                                    <small>8 min read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 2 -->
+                    <article class="post" style="--delay: 2;">
+                        <div class="post__thumbnail">
+                            <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
+                        </div>
+                        <div class="post__content">
+                            <div class="post__info">
+                                <a href="category-posts.html" class="category__button">Technology</a>
+                                <div class="post__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span>October 15, 2023</span>
+                                </div>
+                            </div>
+                            <h3 class="post__title"><a href="post.html">The Future of Artificial Intelligence in Healthcare</a></h3>
+                            <p class="post__body">How AI is revolutionizing medical diagnostics, treatment plans, and patient care across the healthcare industry.</p>
+                            <div class="post__author">
+                                <div class="post__author-avatar">
+                                    <img src="https://via.placeholder.com/40" alt="Author Avatar">
+                                </div>
+                                <div class="post__author-info">
+                                    <h5>By: Sarah Johnson</h5>
+                                    <small>10 min read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 3 -->
+                    <article class="post" style="--delay: 3;">
+                        <div class="post__thumbnail">
+                            <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
+                        </div>
+                        <div class="post__content">
+                            <div class="post__info">
+                                <a href="category-posts.html" class="category__button">Food</a>
+                                <div class="post__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span>October 12, 2023</span>
+                                </div>
+                            </div>
+                            <h3 class="post__title"><a href="post.html">Plant-Based Cooking: A Beginner's Guide</a></h3>
+                            <p class="post__body">Essential tips, techniques, and recipes to help you start your journey into delicious plant-based cooking.</p>
+                            <div class="post__author">
+                                <div class="post__author-avatar">
+                                    <img src="https://via.placeholder.com/40" alt="Author Avatar">
+                                </div>
+                                <div class="post__author-info">
+                                    <h5>By: Maria Garcia</h5>
+                                    <small>7 min read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 4 -->
+                    <article class="post" style="--delay: 4;">
+                        <div class="post__thumbnail">
+                            <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
+                        </div>
+                        <div class="post__content">
+                            <div class="post__info">
+                                <a href="category-posts.html" class="category__button">Photography</a>
+                                <div class="post__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span>October 10, 2023</span>
+                                </div>
+                            </div>
+                            <h3 class="post__title"><a href="post.html">Mastering Landscape Photography</a></h3>
+                            <p class="post__body">Expert techniques for capturing breathtaking landscape photos in any environment and lighting condition.</p>
+                            <div class="post__author">
+                                <div class="post__author-avatar">
+                                    <img src="https://via.placeholder.com/40" alt="Author Avatar">
+                                </div>
+                                <div class="post__author-info">
+                                    <h5>By: James Wilson</h5>
+                                    <small>9 min read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 5 -->
+                    <article class="post" style="--delay: 5;">
+                        <div class="post__thumbnail">
+                            <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
+                        </div>
+                        <div class="post__content">
+                            <div class="post__info">
+                                <a href="category-posts.html" class="category__button">Travel</a>
+                                <div class="post__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span>October 8, 2023</span>
+                                </div>
+                            </div>
+                            <h3 class="post__title"><a href="post.html">Hidden Gems: Unexplored Destinations in Europe</a></h3>
+                            <p class="post__body">Discover lesser-known but equally beautiful European destinations that offer authentic experiences away from tourist crowds.</p>
+                            <div class="post__author">
+                                <div class="post__author-avatar">
+                                    <img src="https://via.placeholder.com/40" alt="Author Avatar">
+                                </div>
+                                <div class="post__author-info">
+                                    <h5>By: Sophie Martin</h5>
+                                    <small>11 min read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 6 -->
+                    <article class="post" style="--delay: 6;">
+                        <div class="post__thumbnail">
+                            <img src="https://via.placeholder.com/600x400" alt="Post Thumbnail">
+                        </div>
+                        <div class="post__content">
+                            <div class="post__info">
+                                <a href="category-posts.html" class="category__button">Science</a>
+                                <div class="post__date">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    <span>October 5, 2023</span>
+                                </div>
+                            </div>
+                            <h3 class="post__title"><a href="post.html">The Mystery of Dark Matter Explained</a></h3>
+                            <p class="post__body">A comprehensive explanation of dark matter, its importance in the universe, and the ongoing scientific research to understand it.</p>
+                            <div class="post__author">
+                                <div class="post__author-avatar">
+                                    <img src="https://via.placeholder.com/40" alt="Author Avatar">
+                                </div>
+                                <div class="post__author-info">
+                                    <h5>By: Robert Taylor</h5>
+                                    <small>13 min read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="page-item active">1</a>
+                    <a href="#" class="page-item">2</a>
+                    <a href="#" class="page-item">3</a>
+                    <a href="#" class="page-item">4</a>
+                    <a href="#" class="page-item"><i class="uil uil-angle-right-b"></i></a>
+                </div>
+            </main>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Categories Widget -->
+                <div class="sidebar__widget">
+                    <h4 class="widget__title">Categories</h4>
+                    <ul class="category__list">
+                        <li><a href="category-posts.html">Travel <span>(15)</span></a></li>
+                        <li><a href="category-posts.html">Wildlife <span>(8)</span></a></li>
+                        <li><a href="category-posts.html">Food <span>(12)</span></a></li>
+                        <li><a href="category-posts.html">Technology <span>(10)</span></a></li>
+                        <li><a href="category-posts.html">Science <span>(7)</span></a></li>
+                        <li><a href="category-posts.html">Photography <span>(9)</span></a></li>
+                        <li><a href="category-posts.html">Art <span>(6)</span></a></li>
+                        <li><a href="category-posts.html">Music <span>(5)</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Popular Posts Widget -->
+                <div class="sidebar__widget">
+                    <h4 class="widget__title">Popular Posts</h4>
+                    <div class="popular__posts">
+                        <!-- Popular Post 1 -->
+                        <article class="popular__post">
+                            <div class="popular__post-image">
+                                <img src="https://via.placeholder.com/100" alt="Popular Post">
+                            </div>
+                            <div class="popular__post-info">
+                                <h5><a href="post.html">The Art of Mindful Travel</a></h5>
+                                <small>October 2, 2023</small>
+                            </div>
+                        </article>
+                        
+                        <!-- Popular Post 2 -->
+                        <article class="popular__post">
+                            <div class="popular__post-image">
+                                <img src="https://via.placeholder.com/100" alt="Popular Post">
+                            </div>
+                            <div class="popular__post-info">
+                                <h5><a href="post.html">Sustainable Living in Small Spaces</a></h5>
+                                <small>September 28, 2023</small>
+                            </div>
+                        </article>
+                        
+                        <!-- Popular Post 3 -->
+                        <article class="popular__post">
+                            <div class="popular__post-image">
+                                <img src="https://via.placeholder.com/100" alt="Popular Post">
+                            </div>
+                            <div class="popular__post-info">
+                                <h5><a href="post.html">The Future of Renewable Energy</a></h5>
+                                <small>September 25, 2023</small>
+                            </div>
+                        </article>
+                        
+                        <!-- Popular Post 4 -->
+                        <article class="popular__post">
+                            <div class="popular__post-image">
+                                <img src="https://via.placeholder.com/100" alt="Popular Post">
+                            </div>
+                            <div class="popular__post-info">
+                                <h5><a href="post.html">Digital Minimalism: A New Approach</a></h5>
+                                <small>September 20, 2023</small>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Tags Widget -->
+                <div class="sidebar__widget">
+                    <h4 class="widget__title">Popular Tags</h4>
+                    <div class="tags">
+                        <a href="#" class="tag">Travel</a>
+                        <a href="#" class="tag">Nature</a>
+                        <a href="#" class="tag">Food</a>
+                        <a href="#" class="tag">Lifestyle</a>
+                        <a href="#" class="tag">Technology</a>
+                        <a href="#" class="tag">Science</a>
+                        <a href="#" class="tag">Photography</a>
+                        <a href="#" class="tag">Health</a>
+                        <a href="#" class="tag">Art</a>
+                        <a href="#" class="tag">Music</a>
+                    </div>
+                </div>
+                
+                <!-- Newsletter Widget -->
+                <div class="sidebar__widget">
+                    <h4 class="widget__title">Newsletter</h4>
+                    <p>Subscribe to our newsletter to get the latest updates directly in your inbox.</p>
+                    <form class="newsletter__form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <!-- End of Blog Content -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Social Icons -->
+            <div class="footer__socials">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="uil uil-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="uil uil-github"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="footer__container">
+                <article>
+                    <h4>About Us</h4>
+                    <p>Modern Blog is a platform dedicated to sharing knowledge, inspiration, and stories across various topics. Our mission is to inform, entertain, and connect people through quality content.</p>
+                </article>
+                
+                <article>
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="category-posts.html">Travel</a></li>
+                        <li><a href="category-posts.html">Wildlife</a></li>
+                        <li><a href="category-posts.html">Food</a></li>
+                        <li><a href="category-posts.html">Science</a></li>
+                        <li><a href="category-posts.html">Music</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form class="footer__form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </article>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer__copyright">
+                <small>&copy; 2025 Modern Blog. All rights reserved.</small>
+                <p class="footer__made-with">
+                    Made with <i class="uil uil-heart"></i> by Modern Blog Team
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

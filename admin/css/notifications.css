@@ -1,0 +1,206 @@
+/* أنماط نظام الإشعارات */
+
+.notifications-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: calc(100% - 40px);
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-right: 4px solid;
+}
+
+.notification-show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.notification-closing {
+    transform: translateX(-120%);
+    opacity: 0;
+}
+
+.notification__icon {
+    margin-left: 15px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification__content {
+    flex: 1;
+}
+
+.notification__content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.notification__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-right: 5px;
+    transition: color 0.2s ease;
+}
+
+.notification__close:hover {
+    color: #333;
+}
+
+/* أنماط أنواع الإشعارات */
+.notification-success {
+    border-right-color: #28a745;
+}
+
+.notification-success .notification__icon {
+    color: #28a745;
+}
+
+.notification-error {
+    border-right-color: #dc3545;
+}
+
+.notification-error .notification__icon {
+    color: #dc3545;
+}
+
+.notification-warning {
+    border-right-color: #ffc107;
+}
+
+.notification-warning .notification__icon {
+    color: #ffc107;
+}
+
+.notification-info {
+    border-right-color: #17a2b8;
+}
+
+.notification-info .notification__icon {
+    color: #17a2b8;
+}
+
+/* تأثيرات إضافية */
+.notification:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* تعديلات للغة العربية */
+.notification {
+    text-align: right;
+    direction: rtl;
+}
+
+/* تعديلات للشاشات الصغيرة */
+@media (max-width: 576px) {
+    .notifications-container {
+        left: 10px;
+        right: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .notification {
+        padding: 12px;
+    }
+
+    .notification__icon {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .notification__content p {
+        font-size: 13px;
+    }
+}
+
+/* أنماط إضافية للنماذج والأزرار */
+.form__actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-secondary {
+    background: var(--color-gray-300);
+    color: var(--color-gray-800);
+}
+
+.btn-secondary:hover {
+    background: var(--color-gray-400);
+    color: var(--color-gray-900);
+}
+
+.edit-category__form {
+    max-width: 600px;
+}
+
+.form__control input:focus,
+.form__control textarea:focus,
+.form__control select:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}
+
+/* تحسينات للجداول */
+.dashboard__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.dashboard__table th {
+    background: var(--color-gray-100);
+    padding: 1rem;
+    text-align: right;
+    font-weight: 600;
+    color: var(--color-gray-800);
+    border-bottom: 2px solid var(--color-gray-300);
+}
+
+.dashboard__table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-gray-200);
+    color: var(--color-gray-700);
+}
+
+.dashboard__table tr:hover td {
+    background: rgba(67, 97, 238, 0.03);
+}
+
+.table__actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-sm {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+}
+
+.text-center {
+    text-align: center;
+}
